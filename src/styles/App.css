@@ -1,0 +1,22 @@
+* {
+    margin: 0;
+}
+
+.mainContainer {
+    background-color: #f0f2f5;
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+}
+.leftContainer {
+    width: 15%;
+    height: 60%;
+    padding: 2rem;
+    padding-top: 5rem;
+}
+.centerContainer {
+    width: 35%;
+}
+.rightContainer {
+    width: 50%;
+}
