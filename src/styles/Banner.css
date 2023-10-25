@@ -1,10 +1,10 @@
 .banner {
-    background-color: whitesmoke;
+    background-color: white;
     display: flex;
     flex-direction: column;
     justify-content: center;
     height: 90%;
-    border: 2px whitesmoke gray;
+    border: 2px whitesmoke;
     border-radius: 10px;
     text-align: center;
     box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;

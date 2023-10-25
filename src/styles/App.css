@@ -16,8 +16,10 @@
     padding-top: 5rem;
 }
 .centerContainer {
-    width: 35%;
+    width: 30%;
+    padding: 2rem;
+    padding-top: 5rem;
 }
 .rightContainer {
-    width: 50%;
+    width: 55%;
 }

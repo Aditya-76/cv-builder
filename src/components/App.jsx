@@ -1,16 +1,16 @@
 import { useState } from 'react'
-import Container from 'react-bootstrap/Container'
 import '../styles/App.css'
 import Banner from './Banner.jsx'
+import PersonalDetails from './PersonalDetails.jsx'
 
 function App() {
-  const personalDetails = {
+  let personalDetailsObj = {
     name: 'Aditya Shekhar',
     email: 'aditya7682@gmail.com',
-    phone: '8827487684',
+    phone: '9998467839',
     address: 'Noida, India'
   }
-  const education = [
+  let educationObj = [
     {
       school: 'Indian Institue of Technology, Gandhinagar',
       degree: 'B.Tech',
@@ -19,7 +19,7 @@ function App() {
       end: '2023',
     }
   ]
-  const experience = [
+  let experienceObj = [
     {
       company: 'The Odin Project',
       position: 'Frontend Developer',
@@ -30,12 +30,19 @@ function App() {
     }
   ]
 
+  const [personalDetails, setPersonalDetails] = useState(personalDetailsObj);
+  const [education, setEducation] = useState(educationObj);
+  const [experience, setExperience] = useState(experienceObj);
+
+
   return (
     <div className="mainContainer">
       <div className="leftContainer">
         <Banner/>
       </div>
-      <div className="centerContainer"></div>
+      <div className="centerContainer">
+        <PersonalDetails data={personalDetails} dataHandler={setPersonalDetails}/>
+      </div>
       <div className="rightContainer"></div>
     </div>
   )
