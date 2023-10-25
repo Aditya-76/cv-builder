@@ -2,6 +2,8 @@ import { useState } from 'react'
 import '../styles/App.css'
 import Banner from './Banner.jsx'
 import PersonalDetails from './PersonalDetails.jsx'
+import Education from './Education.jsx'
+import Options from './Options'
 
 function App() {
   let personalDetailsObj = {
@@ -41,7 +43,19 @@ function App() {
         <Banner/>
       </div>
       <div className="centerContainer">
+        <Options 
+          data1={personalDetails}
+          data2={education}
+          data3={experience}
+          data1Handler={setPersonalDetails}
+          data2Handler={setEducation}
+          data3Handler={setExperience}
+          pd={personalDetailsObj}
+          ed={educationObj}
+          ex={experienceObj}
+        />
         <PersonalDetails data={personalDetails} dataHandler={setPersonalDetails}/>
+        <Education data={education} dataHandler={setEducation}/>
       </div>
       <div className="rightContainer"></div>
     </div>
