@@ -4,18 +4,19 @@ import Banner from './Banner.jsx'
 import PersonalDetails from './PersonalDetails.jsx'
 import Education from './Education.jsx'
 import Options from './Options'
+import Resume from './Resume'
 
 function App() {
   let personalDetailsObj = {
     name: 'Aditya Shekhar',
     email: 'aditya7682@gmail.com',
-    phone: '9998467839',
+    phone: '+91 9998467839',
     address: 'Noida, India'
   }
   let educationObj = [
     {
       school: 'Indian Institue of Technology, Gandhinagar',
-      degree: 'B.Tech',
+      degree: 'Bachelor of Technology',
       grade: '6.58',
       start: '2019',
       end: '2023',
@@ -57,7 +58,9 @@ function App() {
         <PersonalDetails data={personalDetails} dataHandler={setPersonalDetails}/>
         <Education data={education} dataHandler={setEducation}/>
       </div>
-      <div className="rightContainer"></div>
+      <div className="rightContainer">
+        <Resume pd={personalDetails} ed={education} ex={experience}/>
+      </div>
     </div>
   )
 }

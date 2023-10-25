@@ -1,0 +1,44 @@
+.resume {
+    background-color: aquamarine;
+    width: 100%;
+    height: 990px;
+    background-color: white;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    box-sizing: border-box;
+    font-family: 'Helvetica', 'Arial', sans-serif;
+}
+.top-section{
+    background-color: #103166;
+    height: 16%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: white;
+}
+.contact-info {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    column-gap: 2rem;
+    font-size: 17px;
+}
+.main-content {
+    margin: 3rem;
+}
+.education-content h3 {
+    width: 100%;
+    background-color: #f0f2f5;
+    padding: 0.4rem;
+    text-align: center;
+}
+.education-item {
+    width: 100%;
+    display: flex;
+    column-gap: 2rem;
+    margin-top: 1rem;
+}
+.education-duration {
+    width: 20%;
+
+}
