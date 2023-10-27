@@ -30,7 +30,7 @@ function App() {
       position: 'Frontend Developer',
       start: '2022',
       end: 'current',
-      location: 'Bengaluru',
+      location: 'Bengaluru, India',
       description: 'Built interctive web-apps using frontend technologies.'
     }
   ]

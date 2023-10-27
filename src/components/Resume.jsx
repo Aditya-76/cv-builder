@@ -22,11 +22,12 @@ export default function Resume(props){
             <div className="education-item" key={item.school}>
                 <div className='education-duration'>
                     <div>{item.start}-{item.end}</div>
-                    <div><b>{item.grade}</b></div>
+                    <div>{item.location}</div>
                 </div>
                 <div className='education-details'>
-                    <h4>{item.school}</h4>
-                    <div>{item.degree}</div>
+                    <h4>{item.company}</h4>
+                    <div>{item.position}</div>
+                    <div>{item.description}</div>
                 </div>
             </div>
         )
