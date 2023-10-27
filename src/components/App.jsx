@@ -5,12 +5,13 @@ import PersonalDetails from './PersonalDetails.jsx'
 import Education from './Education.jsx'
 import Options from './Options'
 import Resume from './Resume'
+import Experience from './Experience'
 
 function App() {
   let personalDetailsObj = {
     name: 'Aditya Shekhar',
     email: 'aditya7682@gmail.com',
-    phone: '+91 9998467839',
+    phone: '+91 99984xxxxx',
     address: 'Noida, India'
   }
   let educationObj = [
@@ -26,12 +27,12 @@ function App() {
   let experienceObj = [
     {
       id: 0,
-      company: 'The Odin Project',
+      company: 'Umbrella Inc.',
       position: 'Frontend Developer',
       start: '2022',
       end: 'current',
       location: 'Bengaluru, India',
-      description: 'Built interctive web-apps using frontend technologies.'
+      description: 'Designed and prototyped user interface patterns for various clients in various industries, ranging from self-service apps within the telecommunications-sector to mobile games for IOS and Android'
     }
   ]
 
@@ -59,6 +60,7 @@ function App() {
         />
         <PersonalDetails data={personalDetails} dataHandler={setPersonalDetails}/>
         <Education data={education} dataHandler={setEducation}/>
+        <Experience data={experience} dataHandler={setExperience}/>
       </div>
       <div className="rightContainer">
         <Resume pd={personalDetails} ed={education} ex={experience}/>

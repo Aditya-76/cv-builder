@@ -65,10 +65,10 @@ function SchoolForm({data, dataHandler, school, setEditMode}){
                     <h5>End Date</h5>
                     <input type="text" placeholder="" name="end" value={formData.end} onChange={endHandler}/>
                 </div>
-                <div>   
+                <div className='inside-buttons'>   
                     <button type="button" onClick={saveHandler}>Save</button>
                     <button type="button" onClick={cancelHandler}>Cancel</button>
-                    <button type="button" onClick={removeHandler}>Remove</button>
+                    <button type="button" onClick={removeHandler} className='red'>Remove</button>
                 </div>
             </form>
             <br />
@@ -109,7 +109,7 @@ function AddEducation({data, dataHandler, setAddEdu}){
         end: '',
     }
 
-    let [formData, setFormData] = useState({initData});
+    let [formData, setFormData] = useState(initData);
 
     function schoolHandler(e){
         let temp = {...formData, school: e.target.value};
@@ -159,9 +159,9 @@ function AddEducation({data, dataHandler, setAddEdu}){
                     <h5>End Date</h5>
                     <input type="text" placeholder="" name="end" value={formData.end} onChange={endHandler}/>
                 </div>
-                <div>   
+                <div className='inside-buttons'>   
                     <button type="button" onClick={saveHandler}>Save</button>
-                    <button type="button" onClick={cancelHandler}>Cancel</button>
+                    <button type="button" onClick={cancelHandler} className='red'>Cancel</button>
                 </div>
             </form>
             <br />
@@ -185,7 +185,7 @@ function Education(props){
             <br />
             {schoolList}
             <br />
-            {addEdu && <AddEducation key={props.edIndex} data={props.data} dataHandler={props.dataHandler} setAddEdu={setAddEdu}/>}
+            {addEdu && <AddEducation data={props.data} dataHandler={props.dataHandler} setAddEdu={setAddEdu}/>}
             <button className='add-button' onClick={addHandler}>Add</button>
         </div>
     )

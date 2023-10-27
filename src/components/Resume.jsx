@@ -6,7 +6,7 @@ export default function Resume(props){
         return (
             <div className="education-item" key={item.school}>
                 <div className='education-duration'>
-                    <div>{item.start}-{item.end}</div>
+                    <div>{item.start} - {item.end}</div>
                     <div><b>{item.grade}</b></div>
                 </div>
                 <div className='education-details'>
@@ -21,7 +21,7 @@ export default function Resume(props){
         return (
             <div className="education-item" key={item.school}>
                 <div className='education-duration'>
-                    <div>{item.start}-{item.end}</div>
+                    <div>{item.start} - {item.end}</div>
                     <div>{item.location}</div>
                 </div>
                 <div className='education-details'>
