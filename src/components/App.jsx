@@ -10,7 +10,7 @@ import Experience from './Experience'
 function App() {
   let personalDetailsObj = {
     name: 'Aditya Shekhar',
-    email: 'aditya7682@gmail.com',
+    email: 'adxxx@gmail.com',
     phone: '+91 99984xxxxx',
     address: 'Noida, India'
   }
@@ -19,7 +19,7 @@ function App() {
       id: 0,
       school: 'Indian Institute of Technology, Gandhinagar',
       degree: 'Bachelor of Technology',
-      grade: '6.58',
+      grade: '3.24',
       start: '2019',
       end: '2023',
     }

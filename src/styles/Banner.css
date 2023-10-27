@@ -9,3 +9,13 @@
     text-align: center;
     box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
 }
+
+.banner img {
+    height: 6rem;
+    width: 6rem;
+    transition: all 0.2s;
+}
+
+.banner img:hover {
+    transform: scale(1.2);
+}
