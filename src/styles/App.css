@@ -5,13 +5,12 @@
 
 .mainContainer {
     background-color: #f0f2f5;
-    height: 120vh;
     width: 100vw;
     display: flex;
 }
 .leftContainer {
     width: 15%;
-    height: 60%;
+    height: 100vh;
     padding: 2rem;
     padding-top: 5rem;
 }

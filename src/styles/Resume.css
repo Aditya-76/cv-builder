@@ -1,5 +1,4 @@
 .resume {
-    background-color: aquamarine;
     width: 100%;
     height: 990px;
     background-color: white;
@@ -25,6 +24,9 @@
 }
 .main-content {
     margin: 3rem;
+}
+.education-content {
+    margin-bottom: 2rem;
 }
 .education-content h3 {
     width: 100%;

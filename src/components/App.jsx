@@ -15,7 +15,8 @@ function App() {
   }
   let educationObj = [
     {
-      school: 'Indian Institue of Technology, Gandhinagar',
+      id: 0,
+      school: 'Indian Institute of Technology, Gandhinagar',
       degree: 'Bachelor of Technology',
       grade: '6.58',
       start: '2019',
@@ -24,6 +25,7 @@ function App() {
   ]
   let experienceObj = [
     {
+      id: 0,
       company: 'The Odin Project',
       position: 'Frontend Developer',
       start: '2022',

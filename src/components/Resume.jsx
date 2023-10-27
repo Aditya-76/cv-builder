@@ -17,6 +17,21 @@ export default function Resume(props){
         )
     })
 
+    let experienceList = props.ex.map(item => {
+        return (
+            <div className="education-item" key={item.school}>
+                <div className='education-duration'>
+                    <div>{item.start}-{item.end}</div>
+                    <div><b>{item.grade}</b></div>
+                </div>
+                <div className='education-details'>
+                    <h4>{item.school}</h4>
+                    <div>{item.degree}</div>
+                </div>
+            </div>
+        )
+    })
+
     return (
         <div className="resume">
             <div className="top-section">
@@ -32,6 +47,10 @@ export default function Resume(props){
                 <div className="education-content">
                     <h3>Education</h3>
                     {educationList}
+                </div>
+                <div className="education-content">
+                    <h3>Professional Experience</h3>
+                    {experienceList}
                 </div>
             </div>
         </div>
