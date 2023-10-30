@@ -34,7 +34,7 @@ export default function Resume(props){
     })
 
     return (
-        <div className="resume">
+        <div className="resume" id='download-resume'>
             <div className="top-section">
                 <h1>{props.pd.name}</h1>
                 <br />

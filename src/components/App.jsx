@@ -6,6 +6,7 @@ import Education from './Education.jsx'
 import Options from './Options'
 import Resume from './Resume'
 import Experience from './Experience'
+import Download from './Download'
 
 function App() {
   let personalDetailsObj = {
@@ -58,6 +59,7 @@ function App() {
           ed={educationObj}
           ex={experienceObj}
         />
+        <Download />
         <PersonalDetails data={personalDetails} dataHandler={setPersonalDetails}/>
         <Education data={education} dataHandler={setEducation}/>
         <Experience data={experience} dataHandler={setExperience}/>

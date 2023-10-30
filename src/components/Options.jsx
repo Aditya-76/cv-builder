@@ -2,11 +2,6 @@ import '../styles/Options.css'
 
 export default function Options(props){
 
-    console.log(props.data1);
-    console.log(props.data2);
-    console.log(props.data3);
-
-
     function clearHandler(){
         props.data1Handler({name: '', email: '', phone: '', address: ''});
         props.data2Handler([]);
