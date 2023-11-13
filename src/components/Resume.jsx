@@ -34,6 +34,8 @@ export default function Resume(props){
     })
 
     return (
+        <div className='resume-wrapper'>
+        <div className='preview-banner'>Live Preview</div>
         <div className="resume" id='download-resume'>
             <div className="top-section">
                 <h1>{props.pd.name}</h1>
@@ -54,6 +56,7 @@ export default function Resume(props){
                     {experienceList}
                 </div>
             </div>
+        </div>
         </div>
     )
 }

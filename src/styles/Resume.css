@@ -6,6 +6,21 @@
     box-sizing: border-box;
     font-family: 'Helvetica', 'Arial', sans-serif;
 }
+.resume-wrapper{
+    position: relative;
+}
+.preview-banner {
+    position: absolute;
+    top: -4px;
+    right: -4px;
+    text-transform: uppercase;
+    font-size: 10px;
+    color: white;
+    background-color: gray;
+    padding: 0.5rem;
+    border-radius: 6px;
+    font-weight: bold;
+}
 .top-section{
     background-color: #103166;
     height: 16%;
